@@ -1,0 +1,12 @@
+version: "3.1"
+
+services:
+  mogno:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_movi_data:/data/db
+
+volumes:
+  mongo_movi_data:
